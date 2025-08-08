@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Andiamo Pizzeria - South Waterfront, Portland OR</title>
+    <meta name="description" content="Experience authentic Italian pizza at Andiamo Pizzeria in South Waterfront, Portland. We offer gourmet pizzas, fresh salads, and delicious desserts. Order online, visit us at 672 S Gaines St, or purchase a gift card!">
+    <meta name="keywords" content="pizza Portland, italian food Portland, pizzeria South Waterfront, Andiamo Pizzeria, best pizza Portland, gourmet pizza, restaurant, food delivery Portland">
+    <meta name="author" content="Andiamo Pizzeria">
+
+    <!-- Open Graph Meta Tags (for social media sharing) -->
+    <meta property="og:title" content="Andiamo Pizzeria - South Waterfront, Portland" />
+    <meta property="og:description" content="Fresh, delicious, and authentic pizzas made with love in Portland's South Waterfront." />
+    <meta property="og:image" content="183.png" />
+    <meta property="og:url" content="[YOUR_WEBSITE_URL]" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="183.png" type="image/png">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Custom styles to extend Tailwind */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f7f5; /* A warm off-white */
+        }
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+        .brand-blue { color: #0d2d5e; }
+        .brand-gold { color: #d4af37; }
+        .bg-brand-blue { background-color: #0d2d5e; }
+        .bg-brand-gold { background-color: #d4af37; }
+        .border-brand-gold { border-color: #d4af37; }
+        
+        /* Style for video backgrounds to ensure they cover the section */
+        .video-bg-container {
+            position: relative;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: cover;
+        }
+
+        /* --- Attractive Menu Button Styles --- */
+        .nav-link {
+            position: relative;
+            padding: 8px 4px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background-color: #d4af37; /* brand-gold */
+            transition: width 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #0d2d5e; /* brand-blue */
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+
+    <!-- JSON-LD Schema for Local Business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Andiamo Pizzeria - South Waterfront",
+      "image": "183.png",
+      "@id": "[YOUR_WEBSITE_URL]",
+      "url": "[YOUR_WEBSITE_URL]",
+      "telephone": "+1-503-222-3333",
+      "priceRange": "$$",
+      "menu": "[YOUR_WEBSITE_URL]#menu",
+      "servesCuisine": "Italian",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "672 S Gaines St #1",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97239",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 45.498960,
+        "longitude": -122.673450
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "11:00",
+          "closes": "21:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 shadow-lg">
+        <nav class="container mx-auto px-4 sm:px-6 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <div>
+                <a href="#">
+                    <img src="183.png" alt="Andiamo Pizzeria Logo" class="h-14 sm:h-16 w-auto">
+                </a>
+            </div>
+
+            <!-- Right side container -->
+            <div class="flex items-center gap-2 sm:gap-4">
+                <!-- Desktop Nav Links -->
+                <div class="hidden md:flex items-center space-x-6 lg:space-x-8 font-medium">
+                    <a href="#menu" class="nav-link text-gray-700">Menu</a>
+                    <a href="#about" class="nav-link text-gray-700">About Us</a>
+                    <a href="#gift-cards" class="nav-link text-gray-700">Gift Cards</a>
+                    <a href="#contact" class="nav-link text-gray-700">Contact</a>
+                </div>
+
+                <!-- Order Now Button (Visible on all sizes) -->
+                <a href="tel:503-222-3333" class="bg-brand-gold text-white font-bold py-2 px-3 sm:py-3 sm:px-6 rounded-full text-xs sm:text-base hover:bg-yellow-500 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 whitespace-nowrap">Order Now</a>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-800 focus:outline-none">
+                        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu (slide-out) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <a href="#menu" class="block py-3 px-6 text-base text-gray-700 hover:bg-gray-100">Menu</a>
+            <a href="#about" class="block py-3 px-6 text-base text-gray-700 hover:bg-gray-100">About Us</a>
+            <a href="#gift-cards" class="block py-3 px-6 text-base text-gray-700 hover:bg-gray-100">Gift Cards</a>
+            <a href="#contact" class="block py-3 px-6 text-base text-gray-700 hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section with Video Background -->
+        <section class="video-bg-container flex items-center justify-center h-screen text-white">
+            <!-- UPDATED: Desktop Video -->
+            <video autoplay loop muted playsinline class="video-bg hidden md:block">
+                <source src="video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- NEW: Mobile Video -->
+            <video autoplay loop muted playsinline class="video-bg md:hidden">
+                <!-- IMPORTANT: Replace this with your own vertical video file named 'video-mobile.mp4' -->
+                <source src="videomobile.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-black opacity-60 z-10"></div>
+            <div class="relative z-20 container mx-auto px-4 text-center pb-16 sm:pb-24">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">Authentic Italian Pizza in South Waterfront</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-3xl mx-auto">Taste the tradition in every slice. Made with the freshest ingredients and our family's secret sauce.</p>
+                <a href="#menu" class="bg-brand-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition duration-300">View Our Menu</a>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="py-16 sm:py-20">
+            <div class="container mx-auto px-4 sm:px-6">
+                <h2 class="text-3xl sm:text-4xl font-bold text-center brand-blue mb-12">Our Menu</h2>
+
+                <div class="space-y-16">
+                    
+                    <!-- Antipasti & Pane -->
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Antipasti & Pane</h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/f0e0c4/333333?text=Fries" alt="Fries" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">FRIES</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with a side of ketchup.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$5</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/ffd700/333333?text=Mozzarella+Sticks" alt="Mozzarella Sticks" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">MOZZARELLA STICKS</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with a side of marinara.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/d2b48c/333333?text=Chicken+Strips" alt="Chicken Strips" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">CHICKEN STRIPS</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with a side of ranch.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/e4d5b7/333333?text=Breadsticks" alt="Breadsticks" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">BREADSTICKS</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with a side of marina.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$5</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/f0e0c4/333333?text=Garlic+Breadsticks" alt="Garlic Breadsticks" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">GARLIC BREADSTICKS</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with a side of garlic cream sauce.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$6</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/f5deb3/333333?text=Cheese+Breadsticks" alt="Cheese Breadsticks" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">CHEESE BREADSTICKS</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with a side of ranch.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Insalata -->
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Insalata</h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">ITALIAN</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, mushrooms, black olives, tomatoes, parmesan cheese, & croutons, served with a side of Italian dressing.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">AMERICAN</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, carrots, cucumbers, tomatoes, & cheddar cheese, served with a side of ranch dressing.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">CAESAR</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, parmesan cheese, & croutons, tossed with Caesar dressing.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">GREEK</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, cucumbers, red onions, kalamata olives, tomatoes, & feta, served with a side of vinegar & olive oil vinaigrette.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$9</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">SPINACH</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Spinach, black olives, red onions, tomatoes, & feta, served with a side of lemon vinaigrette.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$10</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pizza Della Casa -->
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Pizza Della Casa</h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                           <!-- All Pizza Items -->
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/ffcccb/8b0000?text=Margherita+Pizza" alt="Margherita Pizza" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">MARGHERITA</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Olive oil, mozzarella, provolone, roma tomatoes, basil, & balsamic glaze.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$20 / $23 / $26</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/8f5a3c/ffffff?text=Italiano" alt="Italiano Pizza" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">ITALIANO</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Olive oil, mozzarella, provolone, parmesan, pepperoni, sausage, mushrooms, black olives, white onions, roma tomatoes, & garlic.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$20 / $23 / $26</div>
+                                </div>
+                            </div>
+                            <!-- Add all other pizza items here following the same responsive pattern -->
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/c41e3a/ffffff?text=Americano" alt="Americano Pizza" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">AMERICANO</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Marinara, mozzarella, provolone, cheddar, pepperoni, sausage, mushrooms, & black olives.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$20 / $23 / $26</div>
+                                </div>
+                            </div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="https://placehold.co/600x400/006400/ffffff?text=Genovese" alt="Genovese Pizza" class="w-full h-48 object-cover">
+                                <div class="p-4 sm:p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">GENOVESE</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Pesto, mozzarella, provolone, parmesan, salami, artichokes, green olives, spinach, sun-dried tomatoes, garlic, feta, & balsamic glaze.</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$20 / $23 / $26</div>
+                                </div>
+                            </div>
+                            <!-- ... and so on for all pizzas ... -->
+                        </div>
+                    </div>
+                    
+                    <!-- Pizza Autentica (Build your own) -->
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Pizza Autentica - Build Your Own Pie</h3>
+                         <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+                            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-left">
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Size it Up</h4>
+                                    <p class="text-sm sm:text-base">10" / 12" / 14"</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Decide on a Dough</h4>
+                                    <p class="text-sm sm:text-base">Regular, Sourdough, Gluten-Free</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Select a Sauce</h4>
+                                    <p class="text-sm sm:text-base">Olive Oil, Marinara, Garlic Cream, Pesto, Red Chilli</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Choose a Cheese</h4>
+                                    <p class="text-sm sm:text-base">3 Cheese Blend, Mozzarella, Provolone, Cheddar, Parmesan</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Go with a Glaze</h4>
+                                    <p class="text-sm sm:text-base">Cream, Balsamic, Spicy Garlic, Sriracha</p>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Top it Off (Meats +$2 each)</h4>
+                                    <p class="text-sm sm:text-base">Grilled Chicken, Gyro Chicken, Tandoori Chicken, Pepperoni, Salami, Sausage, Canadian Bacon</p>
+                                </div>
+                                <div class="sm:col-span-2 lg:col-span-3">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue mb-2">Crunch it Up (Veggies +$1.50 each)</h4>
+                                    <p class="text-sm sm:text-base leading-relaxed">Mushrooms, Black Olives, Green Olives, Kalamata Olives, Red Onions, White Onions, Green Onions, Red Bell Peppers, Green Bell Peppers, Serrano Peppers, Jalapenos, Spinach, Artichokes, Roma Tomatoes, Sun-dried Tomatoes, Pineapples, Cilantro, Basil, Garlic, Ginger, Feta, Masala Paneer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rinfreschi (Beverages) -->
+                    <div>
+                        <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Rinfreschi</h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">FOUNTAIN DRINKS</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Coke, Diet Coke, Coke Zero, Sprite, Orange Fanta, Iced Tea.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$5</div>
+                            </div>
+                             <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">BOTTLED BEVERAGES</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Coke, Diet Coke, Coke Zero, Sprite, Orange Fanta, Water.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$4</div>
+                            </div>
+                             <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">HOT COFFEE & TEA</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Served with choice of cream and/or sugar.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$3</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">SAN PELLEGRINO</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Limonata, Cherry, Peach.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$6</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">ITALIAN SODA</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Blackberry, Raspberry, Strawberry, Blueberry, Pomegranate, Orange, Mango, Lime, Pineapple, Coconut, Vanilla.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                            </div>
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h4 class="text-lg sm:text-xl font-bold brand-blue">ITALIAN CREAM SODA</h4>
+                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Add cream and/or whipped cream.</p>
+                                <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Dolci (Desserts) & Salsa a Parte (Sides) -->
+                    <div class="grid lg:grid-cols-2 gap-16">
+                        <div>
+                            <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Dolci</h3>
+                            <div class="space-y-6">
+                                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                    <img src="https://placehold.co/600x400/f5f5dc/333333?text=Cheesecake" alt="Cheesecake" class="w-full h-48 object-cover">
+                                    <div class="p-4 sm:p-6">
+                                        <h4 class="text-lg sm:text-xl font-bold brand-blue">CHEESECAKE</h4>
+                                        <p class="text-gray-600 mt-2 text-sm sm:text-base">With choice of whipped topping.</p>
+                                        <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                                    </div>
+                                </div>
+                                <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                    <img src="https://placehold.co/600x400/5d4037/ffffff?text=Chocolate+Cake" alt="Chocolate Cake" class="w-full h-48 object-cover">
+                                    <div class="p-4 sm:p-6">
+                                        <h4 class="text-lg sm:text-xl font-bold brand-blue">CHOCOLATE CAKE</h4>
+                                        <p class="text-gray-600 mt-2 text-sm sm:text-base">With choice of whipped topping.</p>
+                                        <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                                    </div>
+                                </div>
+                                 <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                    <img src="https://placehold.co/600x400/c19a6b/ffffff?text=Cinnamon+Bites" alt="Cinnamon Sugar Bites" class="w-full h-48 object-cover">
+                                    <div class="p-4 sm:p-6">
+                                        <h4 class="text-lg sm:text-xl font-bold brand-blue">CINNAMON SUGAR BITES</h4>
+                                        <p class="text-gray-600 mt-2 text-sm sm:text-base">Dough balls rolled in cinnamon & sugar.</p>
+                                        <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">Salsa a Parte</h3>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">MARINARA</h4>
+                                    <div class="text-lg font-bold brand-gold mt-2">$2</div>
+                                </div>
+                                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">GARLIC CREAM</h4>
+                                    <div class="text-lg font-bold brand-gold mt-2">$3</div>
+                                </div>
+                                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">SPICY GARLIC</h4>
+                                    <div class="text-lg font-bold brand-gold mt-2">$3</div>
+                                </div>
+                                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md text-center">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">RANCH</h4>
+                                    <div class="text-lg font-bold brand-gold mt-2">$2</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="bg-white py-16 sm:py-20">
+            <div class="container mx-auto px-4 sm:px-6">
+                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/600x400/0d2d5e/d4af37?text=Our+Pizzeria" alt="Inside Andiamo Pizzeria" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl sm:text-4xl font-bold brand-blue mb-4">Our Story</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">"Andiamo" means "Let's go!" in Italian, and that's the spirit we bring to our pizzeria every day. Founded by the Rossi family, Andiamo Pizzeria is the culmination of generations of passion for authentic Italian cooking. We believe in using only the highest quality ingredients, from our hand-crushed San Marzano tomato sauce to our daily-made fresh dough.</p>
+                        <p class="text-gray-600 leading-relaxed">Our mission is simple: to bring our community together over delicious, memorable meals. We're more than just a restaurant; we're a place where families and friends can gather, celebrate, and of course, eat well. Come say ciao!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gift Card Section -->
+        <section id="gift-cards" class="video-bg-container py-20 sm:py-24 text-white">
+            <video autoplay loop muted playsinline class="video-bg">
+                <!-- Using a different video for variety. Replace 'pizzapattern.mp4' with your video file -->
+                <source src="https://videos.pexels.com/video-files/853875/853875-hd_1920_1080_25fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0 bg-brand-blue opacity-80 z-10"></div>
+            <div class="relative z-20 container mx-auto px-4 sm:px-6 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">Give the Gift of Pizza</h2>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Perfect for birthdays, holidays, or just because! Treat your friends and family to an authentic Italian experience with an Andiamo Pizzeria gift card.</p>
+                <a href="https://www.toasttab.com/andiamopdx/giftcards" target="_blank" rel="noopener noreferrer" class="bg-brand-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">Buy a Gift Card</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 sm:py-20">
+             <div class="container mx-auto px-4 sm:px-6 text-center">
+                <h2 class="text-3xl sm:text-4xl font-bold brand-blue mb-12">Visit Us or Get In Touch</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-base sm:text-lg">
+                    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold brand-blue mb-2">Address</h3>
+                        <p>672 S Gaines St #1<br>Portland, OR 97239</p>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold brand-blue mb-2">Hours</h3>
+                        <p>Tue - Sun: 11am - 9pm</p>
+                        <p>Monday: Closed</p>
+                    </div>
+                    <div class="bg-white p-6 sm:p-8 rounded-lg shadow-md">
+                        <h3 class="text-2xl font-bold brand-blue mb-2">Contact</h3>
+                        <p>Phone: <a href="tel:503-222-3333" class="hover:brand-gold">(503) 222-3333</a></p>
+                        <p>Email: <a href="mailto:ciao@andiamopizza.com" class="hover:brand-gold">ciao@andiamopizza.com</a></p>
+                    </div>
+                </div>
+             </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2024 Andiamo Pizzeria - South Waterfront. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Website designed to attract pizza lovers in Portland.</p>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+</html>
