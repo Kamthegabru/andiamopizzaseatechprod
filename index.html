@@ -20,13 +20,16 @@
 
     <!-- Favicon -->
     <link rel="icon" href="183.png" type="image/png">
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.toasttab.com">
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
     <style>
@@ -245,8 +248,8 @@
             </video>
             <div class="absolute inset-0 bg-black opacity-10 z-10"></div>
             <div class="relative z-20 container mx-auto px-4 text-center pt-32 pb-16 sm:pb-24">
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">Fresh Wood Fired Pizza in South Waterfront.</h1>
-                <p class="text-lg md:text-xl mb-8 max-w-6xl font-bold mx-auto brand-white">Tour the Globe One Slice at a a Time with Our International Recipes</p>
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">Fresh Wood Fired Pizza in South Waterfront</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-6xl font-bold mx-auto text-white">Tour the Globe One Slice at a Time with Our International Recipes</p>
                 <a href="#menu" class="bg-brand-gold text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-yellow-500 transition duration-300">View
                     Our Menu</a>
             </div>
@@ -302,7 +305,7 @@
                                 </div>
                             </div>
                              <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
-                                <img src="https://placehold.co/600x400/0d2d5e/ffffff?text=Wings" alt="Chicken Wings" class="w-full h-32 sm:h-48 object-cover" loading="lazy">
+                                <img src="img/bwings.png" alt="Chicken Wings" class="w-full h-32 sm:h-48 object-cover" loading="lazy">
                                 <div class="p-3 sm:p-6">
                                     <h4 class="text-base sm:text-xl font-bold brand-blue">Chicken Wings</h4>
                                     <p class="text-gray-600 mt-2 text-xs sm:text-base">Barbeque or Buffalo served with a side of choice sauce</p>
@@ -349,30 +352,45 @@
                         <h3 class="text-2xl sm:text-3xl font-bold brand-blue mb-6 border-b-2 border-brand-gold pb-2">
                             Salads</h3>
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                                <h4 class="text-lg sm:text-xl font-bold brand-blue">Italian</h4>
-                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, mushrooms, black olives, tomatoes, parmesan cheese, & croutons, served with a side of Italian dressing</p>
-                                <div class="text-lg font-bold brand-gold mt-4">$9</div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="img/isalad.png" alt="Italian Salad" class="w-full h-48 object-cover" loading="lazy">
+                                <div class="p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">Italian</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, mushrooms, black olives, tomatoes, parmesan cheese, & croutons, served with a side of Italian dressing</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$9</div>
+                                </div>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                                <h4 class="text-lg sm:text-xl font-bold brand-blue">American</h4>
-                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, carrots, cucumbers, tomatoes, & cheddar cheese, served with a side of ranch dressing</p>
-                                <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="img/asalad.png" alt="American Salad" class="w-full h-48 object-cover" loading="lazy">
+                                <div class="p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">American</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, carrots, cucumbers, tomatoes, & cheddar cheese, served with a side of ranch dressing</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$8</div>
+                                </div>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                                <h4 class="text-lg sm:text-xl font-bold brand-blue">Caesar</h4>
-                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, parmesan cheese, & croutons, tossed with Caesar dressing</p>
-                                <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="img/csalad.png" alt="Caesar Salad" class="w-full h-48 object-cover" loading="lazy">
+                                <div class="p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">Caesar</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, parmesan cheese, & croutons, tossed with Caesar dressing</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$7</div>
+                                </div>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                                <h4 class="text-lg sm:text-xl font-bold brand-blue">Greek</h4>
-                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, cucumbers, red onions, kalamata olives, tomatoes, & feta, served with a side of olive oil vinaigrette</p>
-                                <div class="text-lg font-bold brand-gold mt-4">$10</div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="img/gsalad.png" alt="Greek Salad" class="w-full h-48 object-cover" loading="lazy">
+                                <div class="p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">Greek</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Romaine lettuce, cucumbers, red onions, kalamata olives, tomatoes, & feta, served with a side of olive oil vinaigrette</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$10</div>
+                                </div>
                             </div>
-                            <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
-                                <h4 class="text-lg sm:text-xl font-bold brand-blue">Spinach</h4>
-                                <p class="text-gray-600 mt-2 text-sm sm:text-base">Spinach, black olives, red onions, tomatoes, & feta, served with a side of lemon vinaigrette</p>
-                                <div class="text-lg font-bold brand-gold mt-4">$10</div>
+                            <div class="bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+                                <img src="img/spinachsalad.png" alt="Spinach Salad" class="w-full h-48 object-cover" loading="lazy">
+                                <div class="p-6">
+                                    <h4 class="text-lg sm:text-xl font-bold brand-blue">Spinach</h4>
+                                    <p class="text-gray-600 mt-2 text-sm sm:text-base">Spinach, black olives, red onions, tomatoes, & feta, served with a side of lemon vinaigrette</p>
+                                    <div class="text-lg font-bold brand-gold mt-4">$10</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -679,10 +697,9 @@
                     </div>
                     <div class="md:w-1/2">
                         <h2 class="text-3xl sm:text-4xl font-bold brand-blue mb-4">Our Story</h2>
-                        <p class="text-gray-600 mb-4 leading-relaxed">At Andiamo, every dish tells a story of passion and flavor. What began as a dream to bring authentic, soulful cuisine to our community has become a welcoming space where friends, families, and food lovers gather. We believe in using the freshest ingredients, bold flavors, and a balance of tradition and creativity to craft meals that feel both familiar and exciting. Our menu reflects a love for quality and variety, offering everything from comforting classics to unique seasonal specials.
-                        <p class="text-gray-600 leading-relaxed">More than just a restaurant, Andiamo is about creating memorable dining 
-                            experiences. We celebrate food as a way to connect people and spark joy, serving every meal with warmth and 
-                            care. Whether it’s your first visit or your hundredth, our promise is the same: come hungry, leave inspired.</p>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Owned and operated by a local multicultural family with a love for international cuisine. Experience our unique pizzeria in the heart of South Waterfront with a menu featuring classic and contemporary recipes from around the world. 
+                        <p class="text-gray-600 leading-relaxed">Taste the freshness of our wood fired pizza with flavors representing global regions of Italy, 
+                            India, Pakistan, Thailand, Arabia, Mexico, America, and Hawaii. Andiamo! Let’s go!</p>
                     </p>
                     </div>
                 </div>
